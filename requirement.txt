@@ -1,0 +1,7 @@
+ultralytics==8.0.100  # Replace with the specific YOLOv8 version you're using
+torch>=1.7.0  # PyTorch, version should match your environment (CPU or GPU)
+torchvision>=0.8.0  # Companion library for PyTorch
+numpy>=1.21.0  # For numerical operations
+matplotlib>=3.4.0  # For visualizations
+tqdm>=4.60.0  # For progress bars
+opencv-python>=4.5.0  # For image processing
