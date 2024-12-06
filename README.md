@@ -37,17 +37,30 @@ Evaluate the model on the validation set with a confidence threshold of 0.5.
 ## Visualizations
 The training metrics (loss, mAP, precision, recall) are saved in the runs directory. 
 
+## Code Implementation
+The core implementation of this project is provided in the Jupyter Notebook:
+
+## Image_detection_underwater_YOLOv8.ipynb:
+This notebook contains the entire workflow of the project, including:
+1. Loading and preprocessing the underwater image dataset.
+2. Fine-tuning the YOLOv8 model on the custom dataset.
+3. Visualizing training metrics such as loss, precision, recall, and mAP.
+4. Evaluating the model's performance on validation data.
+   
+The notebook is well-documented and includes explanations alongside the code for easier understanding.
+
 ## Directory Structure
 ├── datasets/
 │   ├── aquarium/  # Contains training and validation data
-│       ├── train/
-│       ├── val/
-├── runs/  # Training runs and results
-├── data.yaml  # Dataset configuration
-├── requirements.txt  # Dependencies
-├── train.py  # Training script
-├── evaluate.py  # Evaluation script
-└── README.md  # Project documentation 
+│       ├── train/  # Training images and labels
+│       ├── val/    # Validation images and labels
+├── runs/           # Training runs and results (metrics, model checkpoints, logs)
+├── data.yaml       # Dataset configuration file
+├── requirements.txt # Dependencies for the project
+├── train.py         # Script to fine-tune the YOLOv8 model
+├── evaluate.py      # Script to evaluate the YOLOv8 model
+├── Image_detection_underwater_YOLOv8.ipynb  # Notebook with the full implementation
+└── README.md        # Project documentation
 
 
 
